@@ -18,12 +18,13 @@ CREATE TABLE Marks (
 );
 INSERT INTO Marks (mark_id, student_id, subject, marks)
 VALUES
-(101, 1, 'Math', 85),
-(102, 1, 'Science', 90),
-(103, 2, 'Math', 75),
-(104, 2, 'Science', 80),
-(105, 3, 'Math', 95),
-(106, 3, 'Science', 88);
+(101, 1, 'Tamil', 85),
+(102, 1, 'English', 90),
+(103, 2, 'Tamil', 75),
+(104, 2, 'English', 80),
+(105, 3, 'Tamil', 95),
+(106, 3, 'English', 88);
 SELECT s.student_id, s.name, s.class, m.subject, m.marks
 FROM Students s
 JOIN Marks m ON s.student_id = m.student_id;
+
